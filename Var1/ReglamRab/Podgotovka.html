@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    ol {
+      list-style: none;
+      counter-reset: item;
+      padding: 0;
+    }
+    ol li {
+      counter-increment: item;
+      margin-bottom: 10px;
+    }
+    ol li::before {
+      content: counter(item) ". ";
+      font-weight: bold;
+      color: #008CBA;
+    }
+  </style>
+  <title>Подготовка перед работой</title>
+</head>
+<body>
+  <h1>Подготовка перед работой:</h1>
+  <ol>
+    <li> Изучить документацию по подключению и настройке датчиков температуры, влажности и других необходимых параметров к плате Arduino.</li>
+    <li> Проверить целостность и правильное подключение всех компонентов системы.</li>
+    <li> Загрузить на Arduino соответствующий скетч для считывания данных с датчиков и передачи их на мониторинг.</li>
+    <li> Провести тестирование системы, убедиться в корректной передаче данных и их точности.</li>
+    <li> При необходимости настроить и калибровать датчики для достижения точных показаний.</li>
+    <li> Подготовить запасные компоненты и инструменты для оперативного устранения возможных проблем в процессе работы.</li>
+      
+</ol>
+<h4><a href=./../../Var1/Test.html>Вернуться на главную</a></h4>
+</body>
+</html>

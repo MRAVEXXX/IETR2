@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по устранению неисправностей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Центрировать содержимое внутри .container */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px; /* Добавить отступы между кнопками */
+        }
+        #yesButton {
+            background-color: #4caf50;
+            color: white;
+        }
+        #noButton {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="container">
+
+             <h1>Есть питание?</h1>
+           <button id="yesButton">Да</button>
+        <button id="noButton">Нет</button>
+        <script>
+            document.getElementById('yesButton').addEventListener('click', function() {
+              window.location.href = 'MikrPrav.html';
+            });
+            document.getElementById('noButton').addEventListener('click', function() {
+              window.location.href = 'VklPitanye.html';
+            });
+        </script>
+    </div>
+</body>
+</html>
